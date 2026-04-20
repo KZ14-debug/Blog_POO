@@ -84,20 +84,20 @@ public class Publicacion {
 	
 	public String toString()
 	{
-		String resultado = "Titulo: " + titulo + " - "
+		String resultado= "Titulo: " + titulo + " - "
 	            + "Fecha de publicacion: " + fechaCreacion.toString() + "\n"
 	            + "Texto: " + texto + "\n"
 	            + "Comentarios: ";
 
 	    if (comentarios.isEmpty())
 	    {
-	        resultado += "No hay comentarios";
+	        resultado= resultado + "No hay comentarios";
 	    }
 	    else
 	    {
 	        for (Comentario coment : comentarios)
 	        {
-	            resultado += coment.toString() + "\n";
+	            resultado= resultado + coment.toString() + "\n";
 	        }
 	    }
 

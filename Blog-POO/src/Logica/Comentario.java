@@ -44,7 +44,7 @@ public class Comentario {
 	
 	public String toString()
 	{
-		String resultado = "Email: " + emailAutor + " - "
+		String resultado= "Email: " + emailAutor + " - "
 	            + "Fecha de publicacion: " + fecha.toString() + "\n"
 	            + "Texto: " + texto + "\n";
 		
