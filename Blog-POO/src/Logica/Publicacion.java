@@ -11,13 +11,13 @@ public class Publicacion {
 	private String titulo;
 	private String autor;
 	private String texto;
-	private int codigo;
+	private int codigoP;
 	private static int codigoNumerico = 0;
 	private List<Comentario> comentarios;
 	
 	public Publicacion(String titulo, String texto, String autor)
 	{
-		codigo = codigoNumerico;
+		codigoP = codigoNumerico;
 		codigoNumerico++;
 		this.titulo = titulo;
 		this.texto = texto;
@@ -62,8 +62,8 @@ public class Publicacion {
 		return fechaCreacion;
 	}
 
-	public int getCodigo() {
-		return codigo;
+	public int getCodigoP() {
+		return codigoP;
 	}
 	
 	public void agregarComentario(String emailAutor, String texto, String direccionIP)
