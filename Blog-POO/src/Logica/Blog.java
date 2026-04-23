@@ -118,4 +118,11 @@ public class Blog
 		publi.borrarComentario(posicion);
 	}
 	
+	public String toString()
+	{
+	    String resultado =  "Nombre: " + nombre + "\n" + "Codigo numerico: " + codigo + "\n" + "Descripcion: " + descripcion + "\n"
+	    + "Fecha de creacion: " + fechaDeCreacion.toString() + "\n";
+	    
+	    return resultado;
+	}
 }
