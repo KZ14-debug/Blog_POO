@@ -2,7 +2,7 @@ package Logica;
 
 import java.time.LocalDateTime;
 
-public class Comentario {
+class Comentario {
 	
 	private String emailAutor;
 	private String texto;

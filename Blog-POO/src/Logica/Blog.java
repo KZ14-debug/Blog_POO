@@ -7,7 +7,7 @@ public class Blog
 {
 	
 	private String nombre;
-	private int codigo;
+	private int codigoB;
 	private String descripcion;
 	private LocalDateTime fechaDeCreacion;
 	private int codigoNumerico;
@@ -19,7 +19,7 @@ public class Blog
 	{
 		this.nombre = nombre;
 		this.descripcion = descripcion;
-		codigo = codigoNumerico;
+		codigoB = codigoNumerico;
 		codigoNumerico++;
 		fechaDeCreacion = LocalDateTime.now();
 		publicaciones = new TreeMap<Integer, Publicacion>();
@@ -52,8 +52,8 @@ public class Blog
 	}
 
 
-	public int getCodigo() {
-		return codigo;
+	public int getCodigoB() {
+		return codigoB;
 	}
 	
 	public void crearPublicacion(String titulo, String texto, String autor)
@@ -120,7 +120,7 @@ public class Blog
 	
 	public String toString()
 	{
-	    String resultado =  "Nombre: " + nombre + "\n" + "Codigo numerico: " + codigo + "\n" + "Descripcion: " + descripcion + "\n"
+	    String resultado =  "Nombre: " + nombre + "\n" + "Codigo numerico: " + codigoB + "\n" + "Descripcion: " + descripcion + "\n"
 	    + "Fecha de creacion: " + fechaDeCreacion.toString() + "\n";
 	    
 	    return resultado;

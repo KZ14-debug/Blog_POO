@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Publicacion {
+class Publicacion {
 	
 	private LocalDateTime fechaCreacion;
 	private String titulo;
