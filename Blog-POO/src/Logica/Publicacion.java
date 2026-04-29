@@ -66,9 +66,10 @@ class Publicacion {
 		return codigoP;
 	}
 	
-	public void agregarComentario(String emailAutor, String texto, String direccionIP)
+	public void agregarComentario(String emailAutor, String direccionIP, String texto)
 	{
-		Comentario coment = new Comentario(emailAutor, texto, direccionIP);
+		Comentario coment = new Comentario(emailAutor, direccionIP, texto);
+		comentarios.add(coment);
 	}
 	
 	public void borrarComentario(int posicion)
