@@ -76,7 +76,7 @@ class Publicacion {
 	throws Exception
 	{
 		
-		if(posicion < 0 || posicion >= comentarios.size()) //Esto verifica si se ingresa una posicion negativa o si se ingresa una posicion que es mayor o igual a la cantidad de comentarios que hay en la publicacion
+		if(posicion < 0 || posicion >= comentarios.size()) 
 		{
 			throw new Exception("Comentario a eleiminar no exitente");
 		}

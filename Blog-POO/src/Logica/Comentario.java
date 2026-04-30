@@ -46,7 +46,7 @@ class Comentario {
 	{
 		String resultado= "Email: " + emailAutor + " - "
 	            + "Fecha de publicacion: " + fecha.toString() + "\n"
-	            + "Texto: " + texto + "\n";
+	            + "Comentario: " + texto + "\n";
 		
 		return resultado;
 	}

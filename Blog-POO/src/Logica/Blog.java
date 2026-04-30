@@ -10,7 +10,7 @@ public class Blog
 	private int codigoB;
 	private String descripcion;
 	private LocalDateTime fechaDeCreacion;
-	private int codigoNumerico;
+	private static int codigoNumerico = 0;
 	private Map<Integer, Publicacion> publicaciones;
 	
 	
@@ -120,7 +120,7 @@ public class Blog
 	
 	public String toString()
 	{
-	    String resultado =  "Nombre: " + nombre + "\n" + "Codigo numerico: " + codigoB + "\n" + "Descripcion: " + descripcion + "\n"
+	    String resultado =  "Nombre: " + nombre + "\n" + "Codigo: " + codigoB + "\n" + "Descripcion: " + descripcion + "\n"
 	    + "Fecha de creacion: " + fechaDeCreacion.toString() + "\n";
 	    
 	    return resultado;
